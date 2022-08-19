@@ -1,0 +1,9 @@
+.titulo{
+    color: #3da5e2;
+    font-variant: small-caps;
+}
+.texto{
+    color: #545454;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+}

@@ -1,0 +1,109 @@
+body {
+    background: #f2f2f2;
+}
+
+
+/*Texto general de la página*/
+
+.titulo {
+    color: #3da5e2;
+    font-variant: small-caps;
+}
+
+.texto {
+    color: #545454;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+
+/*Quitar decoración a links*/
+
+a {
+    text-decoration: none;
+}
+
+
+/*Todo perteneciente a la barra lateral*/
+
+.navbardash {
+    background: #262a34;
+    min-width: 20%;
+    min-height: 92.6vh;
+}
+
+.navbardash a:hover {
+    background: #1d5f3b;
+}
+
+.navbardash .menu a {
+    display: block;
+    padding: 1rem;
+    color: white;
+}
+
+.navbardash .logo {
+    background: #2e303b;
+}
+
+.navbardash .logo h2 {
+    font-size: 1.5rem;
+    color: #d8d8d8;
+    text-align: center;
+}
+
+
+/*Tamaño del TextArea del Formulario*/
+
+.formulario textarea {
+    min-height: 12rem;
+    max-height: 16rem;
+}
+
+
+/*Caja final (Estedisticas y comentarios)*/
+
+.widget .estadisticas .caja {
+    flex: 1;
+}
+
+.widget .estadisticas .caja h3 {
+    font-size: 1.75rem;
+    color: #2b583f;
+}
+
+.widget .estadisticas .caja p {
+    color: #a8a8a8;
+    margin-bottom: 0;
+}
+
+
+/*Tamaño y redondear imagen*/
+
+.widget .comentarios img {
+    width: 20%;
+    border-radius: 1.5rem;
+    border-color: black;
+    background-color: #2b583f;
+}
+
+
+/*Cambio en tamaño de pantalla sin Bootstrap*/
+
+@media screen and (max-width:576px) {
+    .navbardash {
+        min-height: auto;
+    }
+    .navbardash svg {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .navbardash {
+        min-width: auto;
+    }
+    .navbardash .logo {
+        display: none;
+    }
+}

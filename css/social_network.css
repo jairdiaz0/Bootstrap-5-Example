@@ -1,0 +1,269 @@
+:root {
+    --texto: rgba(255, 255, 255, 0.7);
+    --blanco: #fff;
+    --input: #3a3b3c;
+    --input-hover: #4b4d4e;
+    --activo: #2d88ff;
+    --gris-claro: #b0b3b8;
+    --fondo-contenido: #242526;
+}
+.github{
+    background-color: #011428;
+}
+.texto{
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    font-variant: small-caps;
+}
+.texto-sin{
+    font-size: 1rem;
+    letter-spacing: .05rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #18191a;
+    color: var(--texto);
+}
+
+a {
+    text-decoration: none;
+    color: var(--texto);
+}
+
+/**********************/
+/********HEADER********/
+/**********************/
+header{
+    background: #1c1c1d;
+}
+header .logo{
+    display: inline-block;
+}
+header .logo svg{
+    color: #ac2727;
+    height: 3rem;
+    width: 2.5rem;
+}
+
+header .barra-busqueda{
+    position: relative;
+    width: 100%;
+}
+
+header .barra-busqueda .input{
+    width: 100%;
+    border:none;
+    background: var(--input);
+    color: var(--texto);
+    height: 2.25rem;
+}
+header .barra-busqueda .icono{
+    position: absolute;
+}
+
+/********OPTIONS********/
+header .options a{
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+header .options a:hover{
+    color: var(--texto);
+    background: var(--input);
+    border-radius: .2rem;
+    border-bottom: .2rem solid var(--gris-claro);
+}
+header .options a svg{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+header .options .active{
+    border-bottom: .2rem solid var(--activo);
+}
+header .options .active:hover{
+    background: none;
+    border-bottom: .2rem solid var(--activo);
+}
+
+/********Botones********/
+header .more a{
+    background: var(--input);
+    display: inline-flex;
+    min-width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+header .more a:hover{
+    background: #4b4d4e;
+    color: var(--texto);
+}
+
+header .more .perfil{
+    height: 2.5rem;
+    background: none;
+    min-width: max-content;
+    border-radius: .5rem;
+}
+
+header .more .perfil img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+}
+/**********************/
+/********ASIDE********/
+/**********************/
+aside{
+    height: 85vh;
+    overflow: auto;
+}
+
+/*Enlaces Aside*/
+aside > nav a{
+    display: flex;
+    align-items: center;
+    color: var(--blanco);
+    border-radius: .5rem;
+}
+
+/*Contenedor icono*/
+aside > nav .icono{
+    margin-right: 1rem;
+}
+/*icono*/
+aside > nav .icono svg{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+
+/*Aside End*/
+aside .publicidad{
+    display: block;
+    max-height: 5rem;
+    overflow: hidden;
+}
+/*Contactos*/
+aside .seccion nav a{
+    display: flex;
+    align-items: center;
+    color: var(--blanco);
+}
+aside .seccion nav a:hover{
+    background: var(--input-hover);
+}
+aside nav a:hover{
+    background: var(--input-hover);
+    color:var(--blanco)
+}
+
+aside .seccion nav a img{
+    width: 2rem;
+    height: 2.4rem;
+}
+/**********************/
+/********Main********/
+/**********************/
+main .publicar,
+main .publicacion
+{
+    background: var(--fondo-contenido);
+}
+main .publicar .botones a:hover{
+    background: var(--input-hover);
+    color: var(--texto);
+}
+main .foto{
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+main .publicar .input{
+    height: 100%;
+    border:none;
+    background: var(--input);
+    color: var(--texto);
+    height: 2.25rem;
+}
+
+/*Publicación*/
+.header .foto{
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+}
+main .publicacion .header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+main .publicacion .header .datos{
+    display: flex;
+    flex-direction: column;
+}
+main .publicacion .header .datos .nombre{
+    color: var(--blanco);
+
+}
+main .publicacion .header .datos .hora{
+    color: var(--texto);
+    font-size: .75rem;
+}
+main .publicacion .header .datos .hora:hover{
+    color: var(--texto);
+}
+main .publicacion .header .datos .nombre:hover{
+    text-decoration: underline;
+}
+
+main .publicacion .comentarios .me-gusta svg{
+    color: #e75151;
+}
+
+main .publicacion .comentarios a:hover{
+    text-decoration: underline;
+    color: var(--texto);
+}
+main .publicacion .botones button{
+    width: 100%;
+    border: none;
+    background: none;
+    color: var(--texto);
+}
+main .publicacion .botones button:hover{
+    background: #3a3b3c;
+}
+
+/**********************/
+/********FOOTER********/
+/**********************/
+footer a{
+    color: var(--gris-claro);
+}
+footer a:hover{
+    color: var(--gris-claro);
+    text-decoration: underline;
+}
+/**********************/
+/********MediaQueries********/
+/**********************/
+/*Mediano*/
+@media screen and (max-width:768px){
+    aside{
+        display: none;
+    }
+}
+/*LG*/
+@media screen and (max-width:992px){
+    aside{
+        padding-top: 2.5rem;
+    }
+    main{
+        padding-top: 3rem;
+    }
+}

@@ -1,0 +1,16 @@
+.navjd{
+    background: #385669;
+    font-variant: small-caps;
+}
+.card-img-top{
+    border: 1px dashed black;
+}
+.offcanvastitle{
+    color: rgba(245, 245, 245, 0.9);
+}
+.offcanvasbyjd{
+    max-height: 5rem;
+}
+.github{
+    background-color: #011428;
+}

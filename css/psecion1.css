@@ -1,0 +1,30 @@
+body{
+    background: #f0f3f5;
+}
+div > header{
+    background: #9aca40;
+    padding: 20px;
+}
+.container{
+    margin:10px auto;
+}
+.contenedor-main{
+    margin: 20px 0px;
+    background: white;
+    color:#424242;
+    padding: 20px 20px;
+}
+.contenedor-aside{
+    background: #dee5e8;
+    padding: 60px 20px;
+    color: #0d47a1;
+}
+div.columna{
+    background: blanchedalmond;
+    border: 2px dashed rgba(80, 76, 70, .75);
+    font-style: oblique;
+}
+footer.row{
+    margin-top: 20px;
+    background: burlywood;
+}

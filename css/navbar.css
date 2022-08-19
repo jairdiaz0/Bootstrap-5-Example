@@ -1,0 +1,46 @@
+.offcanvastitle{
+    color: rgba(245, 245, 245, 0.9);
+}
+.logo:hover .icono {
+    background-color: #003855;
+    border-radius: 20%;
+}
+header{
+    font-variant: small-caps;
+}
+header .nav, header .navbar-jd > .offcanvasbyjd{
+    max-height: 5rem;
+}
+.header-title-h2{
+    font-size: 2.5rem;
+}
+header .nav, header .navbar-jd{
+    min-height: 7rem;
+    max-height: 12rem;
+    overflow: hidden;
+    background: #345B63;
+}
+header .logo p, header .logo .icono{
+    color: #c2c2c2;
+}
+header .navbar-jd .a-git-hub{
+    background: #011428  ;
+}
+header .navbar-jd .a-portafolio{
+    background: #3da5e2;
+}
+header .navbar-jd .a-about{
+    background: #005385;
+}
+header .navbar-jd .a-contact{
+    background: #003855;
+}
+header .navbar-jd .a-portafolio:hover{
+    background: #19435f;
+}
+header .navbar-jd .a-about:hover{
+    background: #002841;
+}
+header .navbar-jd .a-contact:hover{
+    background: #07193b;
+}
